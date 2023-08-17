@@ -1,6 +1,6 @@
 import os
-pip import openai
-pip import streamlit as st
+import openai
+import streamlit as st
 
 st.header("Autoresponse generator to any reviews")
 reviews=st.text_area("Copy Paste any customer review")
