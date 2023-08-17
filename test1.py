@@ -9,8 +9,8 @@ button= st.button("Autogenerate Response")
 def gen_auto_response(reviews):
 	openai.api_key = "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"
     
-	response = openai.Completion.create(
-		model="text-davinci-003",
+	response = openai.ChatCompletion.create(
+		model="gpt-3.5-turbo",
         	prompt="Auto response generator \n\nReview: {reviews} \n\nReply: \n ",
         	temperature=0.7,
         	max_tokens=256,
