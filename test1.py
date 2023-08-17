@@ -23,5 +23,5 @@ def gen_auto_response(reviews):
 
 if reviews and button:
 	with st.spinner(".....Generating Autoresponse to your review....."):
-	reply=gen_auto_response(reviews)
-	st.write(reply)
+		reply=gen_auto_response(reviews)
+		st.write(reply)
