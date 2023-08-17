@@ -7,7 +7,7 @@ reviews=st.text_area(“Copy Paste any customer Review”)
 button= st.button(“Autogenerate Response”)
 
 def gen_auto_response(reviews):
-openai.api_key = “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”
+openai.api_key = “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”
 response = openai.ChatCompletion.create(
 model="text-davinci-003",
 prompt=”Auto response generator \n\n”Review: {reviews} \n\nReply: \n”,
